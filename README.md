@@ -22,4 +22,13 @@ Query OK, 1 row affected (0.02 sec)
 
 mysql> grant all on clickhouse.* to 'jboss'@'%' identified by 'set your password';
 Query OK, 0 rows affected (0.00 sec)
+
+git clone https://github.com/AlexPosix/web-gui.git
+
+cd ./web-gui/
+
+mysqldump -u jboss -p clickhouse > clickhouse.sql
+Enter password:
+
 ```
+
