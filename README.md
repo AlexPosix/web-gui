@@ -33,3 +33,8 @@ mysql -u jboss -p clickhouse < clickhouse.sql
 Enter password:
 ```
 
+2. Download jdk and wildfly:
+
+You may download JDK from oracle site
+http://www.oracle.com/technetwork/java/javase/downloads/
+I used java 8
