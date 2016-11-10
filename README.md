@@ -130,4 +130,22 @@ $ ls ~/wildfly-10.1.0.Final/modules/system/layers/base/com/mysql/main
 $ module.xml  mysql-connector-java-5.1.38-bin.jar
 ```
 
+Now add our jdbc driver into datasource:
+```
+$ cd ~/wildfly-10.1.0.Final/bin
+$ ./jboss-cli.sh --connect
 
+[standalone@localhost:9990 /] /subsystem=datasources/jdbc-driver=mysql:add(driver-name=mysql,driver-module-name=com.mysql,driver-class-name=com.mysql.jdbc.Driver)
+
+```
+The output should be as 
+```
+12:46:20,419 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = mysql
+12:46:20,461 INFO  [org.jboss.as.controller] (management-handler-thread - 3) WFLYCTL0183: Service status report
+WFLYCTL0185:    Newly corrected services:
+      service jboss.data-source.reference-factory.clickhouse (no longer required)
+      service jboss.data-source-config.clickhouse (no longer required)
+      service jboss.jdbc-driver.mysql (new available)
+
+{"outcome" => "success"}
+```
