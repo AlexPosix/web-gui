@@ -55,4 +55,8 @@ java version "1.8.0_111"
 Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
 ```
-Now download Wildfly from http://wildfly.org/downloads/ (I used 10.1.0) <br />
+Now download and unarchive Wildfly from http://wildfly.org/downloads/ (I used 10.1.0) <br />
+If query result set may be couple millions, you can modify java memory heap space in Wildfly standalone.conf 
+```
+nano ./wildfly-10.1.0.Final/bin/standalone.conf
+```
