@@ -20,6 +20,6 @@ mysql -u root -p
 mysql> create database clickhouse;
 Query OK, 1 row affected (0.02 sec)
 
-mysql> grant all on clickhouse.* to 'jboss'@'%' identified by '1111';
+mysql> grant all on clickhouse.* to 'jboss'@'%' identified by 'set your password';
 Query OK, 0 rows affected (0.00 sec)
 ```
