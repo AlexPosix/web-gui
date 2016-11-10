@@ -10,10 +10,11 @@ You can perform queries, save them and download as csv with this gui for clickho
 # Getting started
 
 1. First, you need to install mysql server. If you use Debian or Ubuntu, you may do this by following command:
+...
 ```
 $  apt-get install mysql-server
 ```
-...As root then perform:
+As root then perform:
 ```
 mysql -u root -p
 
@@ -33,6 +34,7 @@ cd ./web-gui/
 mysql -u jboss -p clickhouse < clickhouse.sql
 Enter password:
 ```
+...
 2. Download jdk and wildfly:
 
 You may download JDK from Oracle site: <br />
