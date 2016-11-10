@@ -34,6 +34,7 @@ cd ./web-gui/
 mysql -u jboss -p clickhouse < clickhouse.sql
 Enter password:
 ```
+...
 2. Download jdk and wildfly:
 
 You may download JDK from Oracle site: <br />
