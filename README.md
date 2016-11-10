@@ -27,7 +27,7 @@ mysql> grant all on clickhouse.* to 'jboss'@'%' identified by 'set your password
 Query OK, 0 rows affected (0.00 sec)
 
 ```
-Clone files from repository and restore dump to mysql
+Clone files from the repository and restore the dump to a mysql
 ```
 $ git clone https://github.com/AlexPosix/web-gui.git
 $ cd ./web-gui/
@@ -45,7 +45,7 @@ Copy file to your server, unarchive JDK and move to /usr/lib.
 $ tar -xzf jdk-8u111-linux-x64.tar.gz
 $ mv /home/user/jdk1.8.0_111 /usr/lib/
 ```
-Modify your /etc/profile for JAVA_HOME variable, add export variable to file:
+Modify your /etc/profile for JAVA_HOME variable, add export variable to the file:
 ```
 export JAVA_HOME=/usr/lib/jdk1.8.0_111
 ```
@@ -101,7 +101,7 @@ Try to reload page and set your credentials, you will enter into admin console.
 ![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/adminconsole.jpg)
 
 Now we need to add mysql jdbc connector to our wildfly.
-Download connector from http://dev.mysql.com/downloads/connector/j/ or from another resource.
+Download a connector from http://dev.mysql.com/downloads/connector/j/ or from another resource.
 Go to ~/wildfly-10.1.0.Final/modules/system/layers/base/com and create mysql and then main folder
 ```
 $ cd ~/wildfly-10.1.0.Final/modules/system/layers/base/com
@@ -126,7 +126,7 @@ and create module.xml with the following content
      </dependencies>
  </module>
 ```
-Place it into the same directory as connector.
+Place it into the same directory as the connector.
 ```
 $ ls ~/wildfly-10.1.0.Final/modules/system/layers/base/com/mysql/main
 $ module.xml  mysql-connector-java-5.1.38-bin.jar
