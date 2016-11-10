@@ -151,4 +151,4 @@ WFLYCTL0185:    Newly corrected services:
 
 {"outcome" => "success"}
 ```
-Let's start to add our datasource into Wildfly subsystem:
+Let's start to add our datasource into Wildfly subsystem. Go to the Wildfly console configuration -> Subsystems -> Datasoutces -> Non-XA and press add
