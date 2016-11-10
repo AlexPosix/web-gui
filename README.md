@@ -16,7 +16,7 @@ $  apt-get install mysql-server
 ```
 As root then perform:
 ```
-mysql -u root -p
+$ mysql -u root -p
 
 mysql> create database clickhouse;
 Query OK, 1 row affected (0.02 sec)
@@ -27,10 +27,10 @@ Query OK, 0 rows affected (0.00 sec)
 ```
 Clone files from repository and restore dump to mysql
 ```
-git clone https://github.com/AlexPosix/web-gui.git
-cd ./web-gui/
+$ git clone https://github.com/AlexPosix/web-gui.git
+$ cd ./web-gui/
 
-mysql -u jboss -p clickhouse < clickhouse.sql
+$ mysql -u jboss -p clickhouse < clickhouse.sql
 Enter password:
 ```
 
@@ -39,3 +39,22 @@ Download jdk and wildfly:
 You may download JDK from Oracle site: <br />
 http://www.oracle.com/technetwork/java/javase/downloads/ <br />
 (I used JDK 8)
+Copy file to your server, unarchive JDK and move to /usr/lib.
+```
+$ tar -xzf jdk-8u111-linux-x64.tar.gz
+$ mv /home/user/jdk1.8.0_111 /usr/lib/
+```
+Modify your /etc/profile for JAVA_HOME variable, add export variable to file:
+```
+export JAVA_HOME=/usr/lib/jdk1.8.0_111
+```
+Check version:
+```
+$ . /etc/profile
+$ java -version
+java version "1.8.0_111"
+Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+```
+Now download wildfly from http://wildfly.org/downloads/
+(I used 10.1.0)
