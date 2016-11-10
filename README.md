@@ -96,4 +96,4 @@ Password recommendations are listed below. To modify these restrictions edit the
 Password :
 ```
 Try to reload page and set your credentials, you will enter into admin console.
-
+![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/adminconsole.jpg)
