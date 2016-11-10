@@ -24,16 +24,15 @@ Query OK, 1 row affected (0.02 sec)
 mysql> grant all on clickhouse.* to 'jboss'@'%' identified by 'set your password';
 Query OK, 0 rows affected (0.00 sec)
 
-git clone https://github.com/AlexPosix/web-gui.git
-```
-
 ```
 Clone files from repository and restore dump to mysql
+```
+git clone https://github.com/AlexPosix/web-gui.git
 cd ./web-gui/
 
 mysql -u jboss -p clickhouse < clickhouse.sql
 Enter password:
-```...
+```
 
 2. Download jdk and wildfly:
 
