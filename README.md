@@ -60,4 +60,13 @@ If query result set may be a couple of millions, you can modify java memory heap
 ```
 nano ./wildfly-10.1.0.Final/bin/standalone.conf
 ```
-Find JAVA_OPTS="-Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true" and modify for your purposes. 
+Find  <br />
+JAVA_OPTS="-Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true" <bt /> 
+and modify for your purposes. 
+
+## Starting and configure Wildfly
+
+Start wildfly:
+```
+$ /home/user/wildfly-10.1.0.Final/bin/standalone.sh -b=0.0.0.0 -bmanagement=0.0.0.0 &
+```
