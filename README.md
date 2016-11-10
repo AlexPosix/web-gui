@@ -37,8 +37,7 @@ Enter password:
 Download JDK and Wildfly:
 
 You may download JDK from Oracle site: <br />
-http://www.oracle.com/technetwork/java/javase/downloads/ <br />
-(I used JDK 8)
+http://www.oracle.com/technetwork/java/javase/downloads/ (I used JDK 8)<br />
 Copy file to your server, unarchive JDK and move to /usr/lib.
 ```
 $ tar -xzf jdk-8u111-linux-x64.tar.gz
@@ -56,5 +55,4 @@ java version "1.8.0_111"
 Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
 ```
-Now download wildfly from http://wildfly.org/downloads/
-(I used 10.1.0)
+Now download wildfly from http://wildfly.org/downloads/ (I used 10.1.0) <br />
