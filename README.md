@@ -73,6 +73,6 @@ $ /home/user/wildfly-10.1.0.Final/bin/standalone.sh -b=0.0.0.0 -bmanagement=0.0.
 Open in your browser Wildfly admin console 
 http://yourhost:9990
 You see <br />
-![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/Wildflyrealm.jpg)
+![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/wildflyrealm.jpg)
 
 
