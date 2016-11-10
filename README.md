@@ -1,4 +1,4 @@
-#Written by Vaskovskij Alex
+Written by Vaskovskij Alex
 
 # web-gui for clickhouse
 You can perform queries, save them and download as csv with this gui for clickhouse server. 
