@@ -71,8 +71,29 @@ Start wildfly:
 $ /home/user/wildfly-10.1.0.Final/bin/standalone.sh -b=0.0.0.0 -bmanagement=0.0.0.0 &
 ```
 Open in your browser Wildfly admin console 
-http://yourhost:9990
+http://yourhost:9990 <br />
 You see <br />
 ![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/wildflyrealm.jpg)
 
+You need to add user for Wildfly management. 
+```
+$ cd ~/wildfly-10.1.0.Final/bin
+$ ./add-user.sh
+ What type of user do you wish to add?
+  a) Management User (mgmt-users.properties)
+ b) Application User (application-users.properties)
+(a):
+
+Enter the details of the new user to add.
+Using realm 'ManagementRealm' as discovered from the existing property files.
+Username : root
+The username 'root' is easy to guess
+Are you sure you want to add user 'root' yes/no? yes
+Password recommendations are listed below. To modify these restrictions edit the add-user.properties configuration file.
+ - The password should be different from the username
+ - The password should not be one of the following restricted values {root, admin, administrator}
+ - The password should contain at least 8 characters, 1 alphabetic character(s), 1 digit(s), 1 non-alphanumeric symbol(s)
+Password :
+```
+Try to reload page and set your credentials.
 
