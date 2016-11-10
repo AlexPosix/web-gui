@@ -10,4 +10,6 @@ You can perform queries, save them and download as csv with this gui for clickho
 # Getting started
 
 1. First, you need to install mysql server. If you use Debian or Ubuntu, you may do this by following command:
+```
 $  apt-get install mysql-server
+```
