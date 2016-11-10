@@ -60,7 +60,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
 Now download and unarchive Wildfly from http://wildfly.org/downloads/ (I used 10.1.0) <br />
 If query result set may be a couple of millions, you can modify java memory heap space in Wildfly standalone.conf 
 ```
-nano ./wildfly-10.1.0.Final/bin/standalone.conf
+nano ~/wildfly-10.1.0.Final/bin/standalone.conf
 ```
 Find  <br />
 JAVA_OPTS="-Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true" <bt /> 
@@ -70,7 +70,7 @@ and modify for your purposes.
 
 Start wildfly:
 ```
-$ /home/user/wildfly-10.1.0.Final/bin/standalone.sh -b=0.0.0.0 -bmanagement=0.0.0.0 &
+$ ~/wildfly-10.1.0.Final/bin/standalone.sh -b=0.0.0.0 -bmanagement=0.0.0.0 &
 ```
 Open in your browser Wildfly admin console 
 http://yourhost:9990 <br />
@@ -111,7 +111,7 @@ $ mkdir main
 ```
 Place module into directory
 ```
-$ cp mysql-connector-java-5.1.38-bin.jar ./wildfly-10.1.0.Final/modules/system/layers/base/com/mysql/main
+$ cp mysql-connector-java-5.1.38-bin.jar ~/wildfly-10.1.0.Final/modules/system/layers/base/com/mysql/main
 ```
 and create module.xml with the following content
 ```
