@@ -24,11 +24,12 @@ mysql> grant all on clickhouse.* to 'jboss'@'%' identified by 'set your password
 Query OK, 0 rows affected (0.00 sec)
 
 git clone https://github.com/AlexPosix/web-gui.git
-
+```
+Clone files from repository and restore dump to mysql
+```
 cd ./web-gui/
 
-mysqldump -u jboss -p clickhouse > clickhouse.sql
+mysql -u jboss -p clickhouse < clickhouse.sql
 Enter password:
-
 ```
 
