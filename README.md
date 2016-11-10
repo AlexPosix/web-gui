@@ -97,3 +97,37 @@ Password :
 ```
 Try to reload page and set your credentials, you will enter into admin console.
 ![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/adminconsole.jpg)
+
+Now we need to add mysql jdbc connector to our wildfly.
+Download connector from http://dev.mysql.com/downloads/connector/j/ or from another resource.
+Go to ~/wildfly-10.1.0.Final/modules/system/layers/base/com and create mysql and then main folder
+```
+$ cd ~/wildfly-10.1.0.Final/modules/system/layers/base/com
+$ mkdir mysql
+$ cd ~/wildfly-10.1.0.Final/modules/system/layers/base/com/mysql/
+$ mkdir main
+```
+Place module into directory
+```
+$ cp mysql-connector-java-5.1.38-bin.jar ./wildfly-10.1.0.Final/modules/system/layers/base/com/mysql/main
+```
+and create module.xml with the following content
+```
+<?xml version="1.0" encoding="UTF-8"?>
+  <module xmlns="urn:jboss:module:1.1" name="com.mysql">
+     <resources>
+         <resource-root path="mysql-connector-java-5.1.38-bin.jar"/>
+     </resources>
+     <dependencies>
+         <module name="javax.api"/>
+         <module name="javax.transaction.api"/>
+     </dependencies>
+ </module>
+```
+Place it into the same directory as connector.
+```
+$ ls ~/wildfly-10.1.0.Final/modules/system/layers/base/com/mysql/main
+$ module.xml  mysql-connector-java-5.1.38-bin.jar
+```
+
+
