@@ -25,14 +25,14 @@ Query OK, 0 rows affected (0.00 sec)
 
 git clone https://github.com/AlexPosix/web-gui.git
 ```
-Clone files from repository and restore dump to mysql
+
 ```
+Clone files from repository and restore dump to mysql
 cd ./web-gui/
 
 mysql -u jboss -p clickhouse < clickhouse.sql
 Enter password:
 ```
-
 2. Download jdk and wildfly:
 
 You may download JDK from Oracle site: <br />
