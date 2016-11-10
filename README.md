@@ -1,3 +1,5 @@
+#Written by Vaskovskij Alex
+
 # web-gui for clickhouse
 You can perform queries, save them and download as csv with this gui for clickhouse server. 
 
@@ -149,3 +151,4 @@ WFLYCTL0185:    Newly corrected services:
 
 {"outcome" => "success"}
 ```
+Let's start to add our datasource into Wildfly subsystem:
