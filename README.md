@@ -95,5 +95,5 @@ Password recommendations are listed below. To modify these restrictions edit the
  - The password should contain at least 8 characters, 1 alphabetic character(s), 1 digit(s), 1 non-alphanumeric symbol(s)
 Password :
 ```
-Try to reload page and set your credentials.
+Try to reload page and set your credentials, you will enter into admin console.
 
