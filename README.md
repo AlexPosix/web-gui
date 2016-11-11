@@ -161,4 +161,16 @@ Now we define connection URL and credentials to connect our database.
 ![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/datasource3.jpg)
 We can now test our connection. 
 ![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/datasource4.jpg)
-That's all. If something happens wrong, see log ~/wildfly-10.1.0.Final/standalone/log.
+That's all. If something happens wrong, see log ~/wildfly-10.1.0.Final/standalone/log. <br />
+Last step what we should do, just deploy web-gui.war package from repository. 
+
+```
+$ cd web-gui
+$ ls
+$ clickhouse.sql  images  README.md  web-gui.war
+```
+Copy package to your desktop or anywhere else and go to the Wildfly console.
+Select Deployments -> add -> upload a new deployment -> upload package and finish.
+
+Enter URL in your browser http://yourhost:8080/web-gui/
+
