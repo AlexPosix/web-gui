@@ -153,4 +153,12 @@ WFLYCTL0185:    Newly corrected services:
 ```
 Let's start to add our datasource into Wildfly subsystem. Go to the Wildfly console Configuration -> Subsystems -> Datasoutces -> Non-XA and press add. Select MySQL Datasource.
 ![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/datasource.jpg)
-
+press next and define name and JNDI name
+![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/datasource1.jpg)
+press next and select detected driver mysql
+![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/datasource2.jpg)
+now we define connection URL and credentials to connect our database
+![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/datasource3.jpg)
+and we can now testt our connection 
+![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/datasource4.jpg)
+that's all.
