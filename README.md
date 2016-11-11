@@ -161,4 +161,4 @@ Now we define connection URL and credentials to connect our database.
 ![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/datasource3.jpg)
 We can now test our connection. 
 ![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/datasource4.jpg)
-That's all.
+That's all. If something happens wrong, see log ~/wildfly-10.1.0.Final/standalone/log.
