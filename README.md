@@ -152,4 +152,5 @@ WFLYCTL0185:    Newly corrected services:
 {"outcome" => "success"}
 ```
 Let's start to add our datasource into Wildfly subsystem. Go to the Wildfly console Configuration -> Subsystems -> Datasoutces -> Non-XA and press add. Select MySQL Datasource.
+![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/datasource.jpg)
 
