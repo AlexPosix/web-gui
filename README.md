@@ -1,6 +1,6 @@
 Written by Vaskovskij Alex, http://vaskovskij.org.ua
 
-# web-gui for clickhouse
+# Web-gui for Clickhouse
 You can perform queries, save them and download as csv with this gui for clickhouse server. 
 
 ![alt tag](https://github.com/AlexPosix/web-gui/blob/master/images/login.jpg)
