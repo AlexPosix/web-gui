@@ -109,7 +109,7 @@ $ mkdir mysql
 $ cd ~/wildfly-10.1.0.Final/modules/system/layers/base/com/mysql/
 $ mkdir main
 ```
-Place module into directory
+Place module into the directory
 ```
 $ cp mysql-connector-java-5.1.38-bin.jar ~/wildfly-10.1.0.Final/modules/system/layers/base/com/mysql/main
 ```
