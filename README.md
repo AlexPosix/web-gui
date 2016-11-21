@@ -174,3 +174,5 @@ Select Deployments -> add -> upload a new deployment -> upload package and finis
 
 Enter URL in your browser http://yourhost:8080/web-gui/
 
+You have to set a new user with password first in a users.xml, default user is not allowed.
+
